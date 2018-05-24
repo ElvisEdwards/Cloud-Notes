@@ -19,4 +19,12 @@ Scanner sc=new Scanner(new File(“test.java”));//读取文件内容
 
 System.identityHashCode(Object x);获得x对象的绝对hashcode值
 
+    ArrayList  就是动态数组，是Array的复杂版本，动态的增加和减少元素.当更多的元素加入到ArrayList中时,其大小将会动态地增长。它的元素可以通过get/set方法直接访问，因为ArrayList本质上是一个数组。Vector 和ArrayList类似, 区别在于Vector是同步类(synchronized).因此,开销就比ArrayList要大。LinkedList 是一个双链表,在添加和删除元素时具有比ArrayList更好的性能.但在get与set方面弱于ArrayList.当然,这些对比都是指数据量很大或者操作很频繁的情况下的对比。它还实现了 Queue 接口,该接口比List提供了更多的方法,包括 offer(),peek(),poll()等.
+
+注意: 默认情况下ArrayList和Vector的初始容量都是10,所以如果可以预估数据量的话,分配一个较大的初始值属于最佳实践,这样可以减少调整大小的开销。
+
+List list = new ArrayList();
+
+https://www.cnblogs.com/zcscnn/p/7743507.html
+
 </a>
