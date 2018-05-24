@@ -1,0 +1,47 @@
+<a>
+1.主键约束：
+
+格式为：
+alter table 表格名称 add constraint 约束名称 增加的约束类型 （列名）
+
+例子：
+alter table emp add constraint ppp primary key (id);
+
+ 
+
+2.check约束：就是给一列的数据进行了限制
+格式：
+alter table 表名称 add constraint 约束名称 增加的约束类型 （列名）
+
+例子：
+alter table emp add constraint xxx check(age>20);
+
+ 
+
+3.unique约束：这样的约束就是给列的数据追加的不重复的约束类型
+
+格式：
+alter table 表名 add constraint 约束名称 约束类型（列名）
+例子：
+alter table emp add constraint qwe unique(ename);
+
+ 
+
+4.默认约束：意思很简单就是让此列的数据默认为一定的数据
+
+格式：
+alter table 表名称 add constraint 约束名称 约束类型 默认值） for 列名
+
+例子:
+
+alter table emp add constraint jfsddefault 10000 for gongzi;
+
+ 
+
+5.外键约束：
+格式：
+alter table 表名 add constraint 约束名称 约束类型 (列名) references 被引用的表名称 （列名）
+
+例子：
+alter table emp add constraint jfkdsj foreign key (did) references dept (id);
+</a>
